@@ -1,0 +1,9 @@
+<%= link_to "Home", "/" %>
+
+<h1><%= @employee.first_name %></h1>
+<h2><%= @employee.last_name%></h2>
+<h2><%= @employee.email %></h2>
+<h2><%= @employee.friendly_birthday %></h2>
+
+<%= link_to "edit", "/employees/#{@employee.id}/edit" %>
+<%= link_to "delete", "/employees/#{@employee.id}", method: :delete %>
